@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZAX - Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar Menu -->
+        <aside class="sidebar">
+            <div class="logo">
+                <h1>ZAX</h1>
+            </div>
+            <nav class="menu">
+                <ul>
+                    <li><a href="#home" class="menu-item active" data-section="home">Home</a></li>
+                    <li><a href="#game" class="menu-item" data-section="game">🎮 Game</a></li>
+                    <li><a href="#contact" class="menu-item" data-section="contact">📧 Contact</a></li>
+                    <li><a href="#bug" class="menu-item" data-section="bug">🐛 Bug Report</a></li>
+                    <li><a href="#faq" class="menu-item" data-section="faq">❓ Pertanyaan</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Header -->
+            <header class="header">
+                <h2>Welcome to ZAX Dashboard</h2>
+                <p>Your personal dashboard management system</p>
+            </header>
+
+            <!-- Stats Section -->
+            <section id="home" class="section active">
+                <h3>📊 Statistics</h3>
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <h4>Total Users</h4>
+                        <p class="stat-number">1,245</p>
+                    </div>
+                    <div class="stat-card">
+                        <h4>Active Sessions</h4>
+                        <p class="stat-number">342</p>
+                    </div>
+                    <div class="stat-card">
+                        <h4>Games Played</h4>
+                        <p class="stat-number">5,678</p>
+                    </div>
+                    <div class="stat-card">
+                        <h4>Bug Reports</h4>
+                        <p class="stat-number">23</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Game Section -->
+            <section id="game" class="section">
+                <h3>🎮 Game</h3>
+                <div class="content-box">
+                    <p>Selamat datang di bagian Game!</p>
+                    <p>Pilih game yang ingin Anda mainkan:</p>
+                    <div class="game-list">
+                        <button class="game-btn">Tic Tac Toe</button>
+                        <button class="game-btn">Rock Paper Scissors</button>
+                        <button class="game-btn">Memory Game</button>
+                        <button class="game-btn">Quiz Game</button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Contact Section -->
+            <section id="contact" class="section">
+                <h3>📧 Contact</h3>
+                <div class="content-box">
+                    <form class="contact-form">
+                        <input type="text" placeholder="Nama Anda" required>
+                        <input type="email" placeholder="Email Anda" required>
+                        <textarea placeholder="Pesan Anda" rows="5" required></textarea>
+                        <button type="submit" class="submit-btn">Kirim Pesan</button>
+                    </form>
+                </div>
+            </section>
+
+            <!-- Bug Report Section -->
+            <section id="bug" class="section">
+                <h3>🐛 Bug Report</h3>
+                <div class="content-box">
+                    <form class="bug-form">
+                        <input type="text" placeholder="Judul Bug" required>
+                        <select required>
+                            <option value="">Pilih Severity</option>
+                            <option value="low">Low</option>
+                            <option value="medium">Medium</option>
+                            <option value="high">High</option>
+                            <option value="critical">Critical</option>
+                        </select>
+                        <textarea placeholder="Deskripsi Bug" rows="5" required></textarea>
+                        <button type="submit" class="submit-btn">Report Bug</button>
+                    </form>
+                </div>
+            </section>
+
+            <!-- FAQ Section -->
+            <section id="faq" class="section">
+                <h3>❓ Pertanyaan Umum (FAQ)</h3>
+                <div class="content-box">
+                    <div class="faq-item">
+                        <h4>Apa itu ZAX?</h4>
+                        <p>ZAX adalah platform dashboard interaktif yang menyediakan berbagai layanan dan informasi.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h4>Bagaimana cara menggunakan fitur Game?</h4>
+                        <p>Cukup klik menu Game dan pilih game yang ingin Anda mainkan dari daftar yang tersedia.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h4>Bagaimana cara melaporkan bug?</h4>
+                        <p>Buka menu Bug Report, isi formulir dengan detail bug yang Anda temukan, dan klik Report.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h4>Apakah data saya aman?</h4>
+                        <p>Ya, kami menggunakan enkripsi tingkat enterprise untuk menjaga keamanan data Anda.</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
